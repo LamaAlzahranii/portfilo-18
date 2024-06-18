@@ -1,1 +1,14 @@
-<p>portfilio-header works!</p>
+<div class="flex flex-row bg-gray-100 px-4 sm:px-8 pt-12 text-sm">
+    <div class="flex items-center mb-4">
+        <span class="text-xs">{{textToCopy}}</span>
+        <button class="bg-white rounded-full py-2 px-4 ml-2" (click)="copyText()">
+            {{ copied ? 'Copied!' : 'Copy' }}
+        </button>
+        <button class="bg-white rounded-full py-2 px-4 ml-2">CV</button>
+    </div>
+    <div class="flex-1"></div>
+    <div class="flex justify-between">
+        <a href="https://www.linkedin.com/in/lama-ahmad-alzharani/" class="p-2">LinkedIn</a>
+        <a href="https://github.com/LamaAlzahranii" class="p-2">GitHub</a>
+    </div>
+</div>

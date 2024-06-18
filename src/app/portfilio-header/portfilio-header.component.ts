@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './portfilio-header.component.scss'
 })
 export class PortfilioHeaderComponent {
+  copied = false;
+  textToCopy: string = 'lamaahmed.alzahrani@gmail.com';
 
+  copyText() {
+    navigator.clipboard.writeText(this.textToCopy)
+      .then(() => {
+        this.copied = true;
+        setTimeout(() => { this.copied = false; }, 3000); 
+      })
+      .catch(err => console.error('Failed to copy: ', err));
+  }
 }
