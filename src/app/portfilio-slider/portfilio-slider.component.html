@@ -1,8 +1,12 @@
-<!-- <div *NgFor="let list of product">
-    {{list.url}}
-</div> -->
-<div
-    class="flex flex-col  px-4 sm:px-8 pt-28 text-sm items-center justify-center align-middle pb-52 bg-[#FFFFFE]">
-    
-    sssssdddddddddd
+<div class="flex flex-col px-4 sm:px-8 pt-28 text-sm items-center justify-center align-middle pb-52 bg-[#FFFFFE]">
+
+  <div class=" flex flex-row">
+
+    @for (image of imageList; track image.src) {
+    <img class="w-44 h-40 mx-10" [src]="image.src">
+
+    }
+
+  </div>
 </div>
+

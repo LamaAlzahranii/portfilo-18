@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
-
 @Component({
   selector: 'app-portfilio-slider',
   standalone: true,
@@ -11,8 +9,13 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 })
 export class PortfilioSliderComponent {
 
-  // product = [{
-  //   image: ''
-  // }]
+  imageList: any = [
+    { src: 'https://cdn-icons-png.flaticon.com/512/16511/16511234.png' },
+    { src: 'https://www.svgrepo.com/show/333609/tailwind-css.svg' },
+    { src: 'https://cdn-icons-png.flaticon.com/512/3393/3393920.png' },
+    { src: 'https://cdn-icons-png.flaticon.com/512/25/25231.png' },
+    { src: 'https://cdn-icons-png.flaticon.com/512/721/721671.png' },
+  ];
+
 
 }

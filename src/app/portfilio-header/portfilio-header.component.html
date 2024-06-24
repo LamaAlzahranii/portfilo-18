@@ -1,14 +1,15 @@
-<div class="flex flex-row bg-gray-100 px-4 sm:px-8 pt-12 text-sm">
+<div class="flex flex-row bg-gray-100 px-16 pt-12 text-sm justify-center">
     <div class="flex items-center mb-4">
         <span class="text-xs">{{textToCopy}}</span>
-        <button class="bg-[#FFFFFE] rounded-full py-2 px-4 ml-2" (click)="copyText()">
+        <button class="bg-[#FFFFFE] rounded-full py-3 mx-3 w-24 text-center" (click)="copyText()">
             {{ copied ? 'Copied!' : 'Copy' }}
         </button>
-        <button class="bg-[#FFFFFE] rounded-full py-2 px-4 ml-2">CV</button>
+        <button class="bg-[#FFFFFE] rounded-full py-3 mx-2 w-24 text-center">CV</button>
     </div>
     <div class="flex-1"></div>
     <div class="flex justify-between">
         <a href="https://www.linkedin.com/in/lama-ahmad-alzharani/" class="p-2">LinkedIn</a>
+        <span class="p-2">/</span>
         <a href="https://github.com/LamaAlzahranii" class="p-2">GitHub</a>
     </div>
 </div>
