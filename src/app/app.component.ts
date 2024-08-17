@@ -8,6 +8,7 @@ import { PortfilioAboutMeComponent } from "./portfilio-about-me/portfilio-about-
 import { PortfilioProjectsComponent } from "./portfilio-projects/portfilio-projects.component";
 import { PortfilioContactMeComponent } from "./portfilio-contact-me/portfilio-contact-me.component";
 import { PortfilioFooterComponent } from "./portfilio-footer/portfilio-footer.component";
+
 @Component({
   selector: 'app-root',
   standalone: true,

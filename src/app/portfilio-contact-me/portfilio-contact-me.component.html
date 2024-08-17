@@ -1,1 +1,42 @@
-<p>portfilio-contact-me works!</p>
+<!-- <div class="flex flex-col bg-[#EDECEB] px-16 sm:px-8 pt-28 text-sm items-center justify-center align-middle  pb-52">
+    <div class="pt-3 bg-gradient-to-r from-black via-gray-700 to-gray-500 inline-block text-transparent bg-clip-text text-center 
+        font-bold text-4xl">
+
+        <h1>
+            CONTACT ME TO GET STARTED
+
+        </h1>
+
+    </div>
+    <div class="w-full h-[0.1rem] bg-[#DFDEDD] my-6"></div>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" formControlName="name" class="form-control">
+          <div *ngIf="contactForm.get('name').errors && contactForm.get('name').dirty" class="text-danger">
+            <div *ngIf="contactForm.get('name').hasError('required')">Name is required.</div>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" formControlName="email" class="form-control">
+          <div *ngIf="contactForm.get('email').errors && contactForm.get('email').dirty" class="text-danger">
+            <div *ngIf="contactForm.get('email').hasError('required')">Email is required.</div>
+            <div *ngIf="contactForm.get('email').hasError('email')">Invalid email format.</div>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea formControlName="message" class="form-control"></textarea>
+          <div *ngIf="contactForm.get('message').errors && contactForm.get('message').dirty" class="text-danger">
+            <div *ngIf="contactForm.get('message').hasError('required')">Message is required.</div>
+          </div>
+        </div>
+      
+        <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary">Send Message</button>
+      </form>
+      
+</div> -->
